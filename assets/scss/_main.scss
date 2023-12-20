@@ -1,0 +1,366 @@
+#fitness__activity {
+	text-align: center;
+	height: 815px;
+	background-image: url('../../img/fitness__activity-background.png');
+	@include backgroundImage();
+	background-size: contain;
+
+	.fitness__activity-title {
+		margin-top: 70px;
+	}
+
+	.fitness__line {
+		margin: 10.1px auto 0;
+	}
+	.fitness__activities {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 107px;
+		max-width: 1520px;
+		margin: 60px auto 0;
+
+		.fitness__activity-item {
+			.fitness__item-content {
+				border-radius: 8px;
+				background: #f1f6fa;
+				box-shadow: 0px 8px 25px 0px #d9e8f4;
+				padding: 30px 30px 80px;
+				color: $main-color;
+				max-height: 350px;
+
+				.fitness__activity--icon img {
+					width: 80px;
+					height: 80px;
+				}
+
+				.fitness__activities-title {
+					margin-top: 5px;
+				}
+
+				.fitness__activities-descriptor {
+					margin-top: 25px;
+					font-size: 14px;
+					line-height: 124.5%;
+				}
+			}
+
+			.fitness__activity-btn {
+				display: block;
+				margin: -22.5px auto 0;
+				padding: 10.5px 28px;
+				max-width: 150px;
+				font-size: 18px;
+			}
+
+			&:nth-child(2n) {
+				margin-top: 180px;
+			}
+		}
+	}
+}
+
+#today__workout {
+	margin-top: 65px;
+
+	.container {
+		max-width: 1800px;
+		margin: 0 0 0 auto;
+	}
+
+	.today__workout-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		.today__workout-text {
+			margin-top: 120px;
+			max-width: 638px;
+
+			.today__workout-descriptor {
+				margin-top: 22px;
+				line-height: 124.5%;
+				color: rgba($main-color, 0.7);
+				font-size: 20px;
+
+				& + .today__workout-descriptor {
+					margin-top: 7px;
+				}
+			}
+
+			.today__workout-btn {
+				display: inline-block;
+				margin-top: 30px;
+				font-size: 32px;
+				line-height: 124.5%;
+				padding: 22.5px 34.5px;
+			}
+		}
+	}
+}
+
+#video__exersices {
+	margin-top: 93px;
+	background-image: url('../../img/video__exersices-background.png');
+	@include backgroundImage();
+	height: 816px;
+
+	.video__exersices-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 190px;
+
+		.video__exersices-image {
+			margin-top: 151px;
+			height: 714px;
+
+			img {
+				width: 892.147px;
+				height: 600px;
+			}
+		}
+
+		.video__exersices-text {
+			margin-top: 201px;
+			max-width: 638px;
+
+			.video__exersices-descriptor {
+				margin-top: 22px;
+				line-height: 124.5%;
+				color: rgba($main-color, 0.7);
+				font-size: 20px;
+
+				& + .video__exersices-descriptor {
+					margin-top: 7px;
+				}
+			}
+
+			.video__exersices-btn {
+				display: inline-block;
+				margin-top: 30px;
+				font-size: 32px;
+				line-height: 124.5%;
+				padding: 22.5px 34.5px;
+			}
+		}
+	}
+}
+
+#fitness__performance {
+	margin-top: 70px;
+	text-align: center;
+	background-image: url('../../img/fitness__performance-background.png');
+	background-position: center top;
+
+	.fitness__performance-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 41px;
+		max-width: 1462px;
+		margin: 100px auto 0;
+
+		.fitness__performance-text {
+			text-align: left;
+		}
+
+		.fitness__performance-descriptor {
+			margin-top: 22px;
+			line-height: 124.5%;
+			color: rgba($main-color, 0.7);
+			font-size: 20px;
+
+			& + .fitness__performance-descriptor {
+				margin-top: 7px;
+			}
+		}
+
+		.fitness__performance-btn {
+			display: inline-block;
+			margin-top: 30px;
+			font-size: 32px;
+			line-height: 124.5%;
+			padding: 18px 34.5px;
+		}
+	}
+
+	.meals {
+		margin-top: 130px;
+		.container {
+			max-width: 1376px;
+		}
+
+		.meals__content {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 120px;
+
+			.meals__infographic {
+				max-width: 538px;
+				border-radius: 20px;
+				background: linear-gradient(
+					171deg,
+					#4e7d96 -2.9%,
+					rgba(0, 0, 0, 0.6) 205.06%
+				);
+				box-shadow: 0px 0px 0px 0px #396d89;
+				color: $text-color;
+
+				.meals__infographic-top {
+					padding: 30px 30px 0;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					.meals__infographic-title {
+						font-size: 32px;
+						font-weight: 600;
+					}
+
+					.meals__infographic-slide {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+
+						.meals__slide-text {
+							font-size: 24px;
+							line-height: 124.5%;
+							color: rgba($text-color, 0.5);
+						}
+						.meals__slide-icon {
+							width: 20px;
+							height: 20px;
+						}
+					}
+				}
+
+				.meals__infographic-count {
+					display: flex;
+					justify-content: start;
+					align-items: end;
+					padding-left: 30px;
+
+					.meals__count-content {
+						color: $text-color;
+					}
+				}
+
+				.meals__infographic-statistics {
+					margin-top: 110px;
+				}
+
+				.meals__infographic-bottom {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					gap: 55px;
+					padding: 75px 40px 35px;
+
+					.meals__infographic-foot {
+						font-size: 24px;
+						line-height: 124.5%;
+					}
+				}
+			}
+
+			.meals__text {
+				text-align: left;
+
+				.meals__text-title {
+					margin-top: 70px;
+				}
+
+				.meals__text-descriptor {
+					margin-top: 22px;
+					line-height: 124.5%;
+					color: rgba($main-color, 0.7);
+					font-size: 20px;
+
+					& + .video__exersices-descriptor {
+						margin-top: 7px;
+					}
+				}
+
+				.meals__text-btn {
+					display: inline-block;
+					margin-top: 30px;
+					font-size: 32px;
+					line-height: 124.5%;
+					padding: 17px 34.5px;
+				}
+			}
+		}
+	}
+
+	.infographics {
+		margin-top: 160px;
+
+		.infographics__list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 86px;
+
+			.infographic__item {
+				padding: 25px 30px;
+				border-radius: 20px;
+				background: $primary-color;
+				color: $text-color;
+
+				.infographic__item-top {
+					display: flex;
+					justify-content: space-between;
+					height: 45px;
+
+					.infographic__item-title {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+
+						.infographic__title-icon img {
+							width: 45px;
+							height: 45px;
+						}
+
+						.infographic__item-text {
+							font-size: 32px;
+							line-height: 124.5%;
+						}
+					}
+
+					.infographic__title-slide {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+
+						.infographic__slide-text {
+							font-size: 24px;
+							line-height: 124.5%;
+							color: rgba($text-color, 0.5);
+						}
+						.infographic__slide-icon {
+							width: 20px;
+							height: 20px;
+						}
+					}
+				}
+
+				.infographic__item-info {
+					display: flex;
+					justify-content: space-between;
+					margin-top: 30px;
+
+					.infographic__item-count {
+						display: flex;
+						align-items: end;
+
+						.infographic__item-content {
+							font-size: 48px;
+							line-height: 100%;
+						}
+
+						.infographic__item-measurement {
+							font-size: 24px;
+							line-height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

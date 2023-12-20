@@ -1,0 +1,48 @@
+.nav {
+	background-color: #fff;
+}
+
+.nav__content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.nav__logo-link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: #4e7d96;
+		font-size: 48px;
+		font-weight: 600;
+		line-height: 100%;
+
+		.nav__logo-image {
+			width: 161px;
+			height: 155px;
+
+			background-image: url('../../img/nav__logo.png');
+			@include backgroundImage;
+		}
+
+		.nav__logo-club {
+			opacity: 0.5;
+		}
+	}
+
+	.nav__right-links {
+		display: flex;
+		gap: 83px;
+
+		.right__link-item a {
+			color: #4e7d96;
+			font-size: 28px;
+			font-weight: 600;
+
+			&.btn {
+				padding: 16px 56px;
+				font-size: 32px;
+			}
+		}
+	}
+}

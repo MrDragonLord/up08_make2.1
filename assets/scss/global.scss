@@ -1,0 +1,28 @@
+@import './normalize';
+@import './fonts';
+@import './ui';
+@import './varriables';
+@import './mixins';
+
+@import './nav';
+@import './header';
+@import './main';
+@import './footer';
+
+html,
+body {
+	height: max-content;
+}
+
+body {
+	background: linear-gradient(
+		180deg,
+		#396d89 -6.84%,
+		rgba(241, 246, 250, 0.4) 36.82%,
+		rgba(240, 246, 249, 0.33) 56.81%,
+		rgba(240, 246, 249, 0.41) 88.01%,
+		rgba(78, 125, 150, 0.7) 112.96%
+	);
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+}
